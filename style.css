@@ -158,6 +158,8 @@ a:visited {
 }
 .summary p {
   margin: 0 0 12px;
+  text-align: justify;
+  text-justify: inter-word;
 }
 
 /* Sections */
@@ -247,14 +249,11 @@ a:visited {
   background: #ffffff;
   border-bottom: 1px solid var(--border);
 }
-.project-media svg {
+.project-media img {
   width: 100%;
   height: 100%;
-  max-width: 170px;
-  stroke: var(--text);
-  fill: none;
-  stroke-linecap: round;
-  stroke-linejoin: round;
+  object-fit: cover;
+  display: block;
 }
 .project-body {
   padding: var(--space-5);
