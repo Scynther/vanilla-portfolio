@@ -107,6 +107,12 @@ a:visited {
   margin: 0 0 var(--space-4);
   font-weight: 500;
 }
+.hero-headline {
+  margin: -8px 0 var(--space-4);
+  color: var(--text);
+  font-size: 14px;
+  font-weight: 600;
+}
 .res-contact {
   display: flex;
   flex-direction: column;
@@ -367,15 +373,6 @@ a:visited {
   color: var(--muted-2);
   font-size: 13px;
   margin-top: var(--space-1);
-}
-.footer-visit {
-  margin: var(--space-1) 0 0;
-  color: var(--muted);
-  font-size: 13px;
-}
-.footer-visit #visit-count {
-  color: var(--text);
-  font-weight: 700;
 }
 .footer-center .footer-links {
   display: flex;
