@@ -368,6 +368,15 @@ a:visited {
   font-size: 13px;
   margin-top: var(--space-1);
 }
+.footer-visit {
+  margin: var(--space-1) 0 0;
+  color: var(--muted);
+  font-size: 13px;
+}
+.footer-visit #visit-count {
+  color: var(--text);
+  font-weight: 700;
+}
 .footer-center .footer-links {
   display: flex;
   gap: var(--space-3);

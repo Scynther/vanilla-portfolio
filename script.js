@@ -1,5 +1,13 @@
 // Minimal JS: smooth scrolling, mobile nav toggle, and footer year
 document.addEventListener("DOMContentLoaded", () => {
+  const visitCount = document.getElementById("visit-count");
+  const visitKey = "vanilla-portfolio-visit-count";
+  if (visitCount) {
+    const currentCount = Number(localStorage.getItem(visitKey) || "0") + 1;
+    localStorage.setItem(visitKey, String(currentCount));
+    visitCount.textContent = currentCount.toLocaleString();
+  }
+
   // Smooth internal link scrolling
   document.querySelectorAll('a[href^="#"]').forEach((a) => {
     a.addEventListener("click", (e) => {
